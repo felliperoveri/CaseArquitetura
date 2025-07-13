@@ -7,17 +7,16 @@
 | Serviço                 | Finalidade                                                                 |
 |-------------------------|----------------------------------------------------------------------------|
 | S3 + CloudFront         | Hospedagem de microfrontends com caching, performance e alta disponibilidade |
-| API Gateway (Externo e Interno) | Interface de entrada unificada para microsserviços internos e expostos         |
+| API Gateway (Externo e Interno) | Interface de entrada unificada para microsserviços internos e expostos|
 | Cognito + RHSSO         | Autenticação segura com SSO corporativo                                     |
 | Lambda                  | Orquestração leve, processamento de eventos e integração com sistemas externos |
-| ECS Fargate             | Execução dos microsserviços por domínio (Crédito, Documentos, Financeiro)     |
+| ECS Fargate             | Execução dos microsserviços por domínio (Contas, Documentos, Financeiro)     |
 | Amazon RDS PostgreSQL   | Banco relacional com transações ACID e consistência forte                     |
 | RDS Proxy               | Multiplexação segura de conexões com banco relacional                         |
-| Amazon MSK (Kafka)      | Comunicação assíncrona, CDC e backbone de eventos                             |
-| Kafka Connect + Debezium| Leitura de alterações no banco legado via CDC                                 |
+| CDC DB2 + Tópico Kafka  | Primeira carga full e leitura de alterações no banco legado via CDC           |
 | Step Functions          | Orquestração transacional (padrão SAGA) entre débito e crédito                 |
 | Amazon SQS              | Fila intermediária para desacoplamento e resiliência                          |
-| Amazon S3 (Data Lake)   | Armazenamento de logs, documentos, payloads e dados históricos                 |
+| Amazon S3               | Armazenamento de logs, documentos, payloads e dados históricos                 |
 | ElastiCache (Redis)     | Cache de informações de conta e limites com baixa latência                    |
 | CloudWatch + X-Ray      | Logs, métricas, tracing distribuído e alarmes                                 |
 | WAF + Shield + ACM      | Proteção contra ataques e TLS para APIs e frontend                            |
