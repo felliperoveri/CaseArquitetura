@@ -142,5 +142,5 @@ Essa arquitetura é **moderna, resiliente, escalável e preparada para nuvem hí
 ## ✍️ Autor
 
 **Fellipe Roveri Custodio**  
-Especialista em Arquitetura de Sistemas Bancários  
+Engenheiro de Software 
 🔗 [linkedin.com/in/felliperoveri](https://www.linkedin.com/in/felliperoveri/)
